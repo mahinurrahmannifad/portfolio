@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahinur Rahman Nifad | Software Engineer & Designer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h1>MAHINUR RAHMAN NIFAD</h1>
+          <h2>Software Engineer & Designer</h2>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/mahinurrahmannifad"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mahinurrahmannifad"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://www.pinterest.com/mahinurrahmannifad"
+              target="_blank"
+              ><i class="fab fa-pinterest-p"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/mahinurrahmannifad"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://github.com/mahinurrahmannifad" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="profile-image">
+          <img
+            src="https://lh6.googleusercontent.com/YA2wdTGMVe7k80POQhhmT8veYXC4i0XYqKEcVvaffk6QyeXJEVQgJGks5s-KuYRw_WUOsBV0gx50xklH0iwuKBwDcDuwCLk0U807r4Y2-p6XjgIU_16Q3GDCkkopnsDuww=w1280"
+            alt="Mahinur Rahman Nifad"
+            id="profile-img"
+          />
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Holding#46, Ansar Ali Road,
+              Tongi, Gazipur-1711
+            </p>
+            <p><i class="fas fa-phone"></i> 01628511429</p>
+            <p>
+              <i class="fas fa-envelope"></i> mdmahinurrahmannifad@gmail.com
+            </p>
+            <div class="language">
+              <h4>Languages</h4>
+              <p>English</p>
+              <p>Bangla</p>
+            </div>
+          </div>
+          <div class="bio">
+            <p>
+              I am a student of Software Engineering. It suits my interest. I
+              try to finish difficult tasks easily. Has the ability to execute
+              tasks with proper command. I believe all work can be done with
+              proper order and proper planning. I try to do my work on time. My
+              passion for designing intuitive and accessible experiences drives
+              my work, and I am committed to creating engaging and seamless
+              experiences for users.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2022 - 2026</div>
+            <div class="timeline-content">
+              <h3>BSc. IN SOFTWARE ENGINEERING</h3>
+              <p>Daffodil International University</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018 - 2020</div>
+            <div class="timeline-content">
+              <h3>HSC</h3>
+              <p>Shaheed Ramiz Uddin Cantonment College</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2016 - 2018</div>
+            <div class="timeline-content">
+              <h3>SSC</h3>
+              <p>Safiuddin Sarker Academy & College</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Animation on scroll
+      document.addEventListener("DOMContentLoaded", function () {
+        const timelineItems = document.querySelectorAll(".timeline-item");
+
+        function checkVisibility() {
+          timelineItems.forEach((item, index) => {
+            const rect = item.getBoundingClientRect();
+            const isVisible = rect.top <= window.innerHeight * 0.8;
+
+            if (isVisible) {
+              setTimeout(() => {
+                item.classList.add("visible");
+              }, index * 200);
+            }
+          });
+        }
+
+        // Initial check
+        checkVisibility();
+
+        // Check on scroll
+        window.addEventListener("scroll", checkVisibility);
+      });
+    </script>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <div class="exp-date">October 2022</div>
+            <h3>Digital Marketer</h3>
+            <h4>ScientistX Technology</h4>
+            <p>
+              I worked in a consultancy at Scientist Technology. It was a remote
+              job for me. I shared my idea for my client on how he can grow his
+              business online.
+            </p>
+          </div>
+          <div class="experience-card">
+            <div class="exp-date">May 2023</div>
+            <h3>UI/UX Designer</h3>
+            <h4>Warranty Worx</h4>
+            <p>
+              I worked as a Co-UI/UX Designer at Warranty Worx. They are a
+              construction service provider. I designed the landing page for
+              their website. I do this in a group.
+            </p>
+          </div>
+          <div class="experience-card">
+            <div class="exp-date">September 2024-Present</div>
+            <h3>Marketing Manager</h3>
+            <h4>Syntor IT</h4>
+            <p>
+              Currently I am working in contract marketing at syntorit.com. This
+              company works to create attractive websites and mobile apps for
+              clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Marketing</h3>
+            <ul>
+              <li>SEO</li>
+              <li>SEM</li>
+              <li>SMM</li>
+              <li>MS Office</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Design & Development</h3>
+            <ul>
+              <li>UI/UX</li>
+              <li>Flutter</li>
+              <li>Java</li>
+              <li>C</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-chart">
+          <div class="skill-bar">
+            <div class="skill-name">UI/UX</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 85%"></div>
+            </div>
+            <div class="skill-percent">85%</div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-name">Flutter</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 75%"></div>
+            </div>
+            <div class="skill-percent">75%</div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-name">Java</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 70%"></div>
+            </div>
+            <div class="skill-percent">70%</div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-name">SEO</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 80%"></div>
+            </div>
+            <div class="skill-percent">80%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+          <div class="contact-info-bottom">
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Holding#46, Ansar Ali Road,
+              Tongi, Gazipur-1711
+            </p>
+            <p><i class="fas fa-phone"></i> 01628511429</p>
+            <p>
+              <i class="fas fa-envelope"></i> mdmahinurrahmannifad@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Mahinur Rahman Nifad. All rights reserved.</p>
+        <div class="social-icons">
+            <a
+              href="https://www.facebook.com/mahinurrahmannifad"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mahinurrahmannifad"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://www.pinterest.com/mahinurrahmannifad"
+              target="_blank"
+              ><i class="fab fa-pinterest-p"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/mahinurrahmannifad"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://github.com/mahinurrahmannifad" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll("nav a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Form submission handling
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thank you for your message! I will get back to you soon.");
+          this.reset();
+        });
+
+      // Animate skill bars on scroll
+      window.addEventListener("scroll", function () {
+        const skillBars = document.querySelectorAll(".bar");
+        const skillsSection = document.getElementById("skills");
+        const sectionPosition = skillsSection.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+
+        if (sectionPosition < screenPosition) {
+          skillBars.forEach((bar) => {
+            const width = bar.style.width;
+            bar.style.width = "0";
+            setTimeout(() => {
+              bar.style.width = width;
+            }, 100);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
